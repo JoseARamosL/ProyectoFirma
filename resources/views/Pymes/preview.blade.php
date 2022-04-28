@@ -2,12 +2,12 @@
     <div
         style="max-width: 574px; padding: 20px; background: #ffffff; margin: 40px 0; font-family: 'Arial', 'Helvetica'">
         <p style="color: #021438; font-size: 18px; font-weight: bold; text-transform: uppercase; margin-bottom: 7px;">
-            {{ strtoupper($ayudaT['name']) }}</p>
-        <p style="color: #021438; font-size: 12px; margin-top: 0">{{ strtoupper($ayudaT['cargo']) }}</p>
+            {{ strtoupper($pymes['name']) }}</p>
+        <p style="color: #021438; font-size: 12px; margin-top: 0">{{ strtoupper($pymes['cargo']) }}</p>
         <table>
             <tr>
                 <td>
-                    <p style="color: #021438; font-size: 13px; font-weight: bold;">{{ $ayudaT['phone'] }}</p>
+                    <p style="color: #021438; font-size: 13px; font-weight: bold;">{{ $pymes['phone'] }}</p>
                 </td>
             </tr>
 
@@ -34,7 +34,7 @@
             <tr>
                 <td>
                     <p style="color: #021438; font-size: 12px; font-weight: bold;"><a
-                            href="https://ayudatpymes.com/">AyudaT</a></p>
+                            href="https://ayudatpymes.com/">AyudaTPymes</a></p>
                 </td>
             </tr>
             <tr>
@@ -90,7 +90,6 @@
         <br>
         <button onclick="copyToClickBoard()">Copiar</button>
         <textarea name="textA1" id="textA1"></textarea>
-
     </div>
 </div>
 

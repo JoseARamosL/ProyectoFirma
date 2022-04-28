@@ -20,10 +20,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/AyudaT', [AyudaTController::class, 'index'])->name('ayudaT.index');
-Route::get('/Pymes', [PymesController::class, 'index'])->name('pymes.index');
-Route::get('/Edase', [EdaseController::class, 'index'])->name('edase.index');
+Route::get('/ayudat', [AyudaTController::class, 'index'])->name('ayudat.index');
+Route::get('/pymes', [PymesController::class, 'index'])->name('pymes.index');
+Route::get('/edase', [EdaseController::class, 'index'])->name('edase.index');
 
-Route::get('/previewAyudaT', [AyudaTController::class, 'preview'])->name('ayudaT.preview');
-Route::get('/Pymes/preview', [PymesController::class, 'preview'])->name('pymes.preview');
-Route::get('/Edase/preview', [EdaseController::class, 'preview'])->name('edase.preview');
+Route::post('/previewayudat', [AyudaTController::class, 'preview'])->name('ayudat.preview');
+Route::post('/pymes/preview', [PymesController::class, 'preview'])->name('pymes.preview');
+Route::post('/edase/preview', [EdaseController::class, 'preview'])->name('edase.preview');

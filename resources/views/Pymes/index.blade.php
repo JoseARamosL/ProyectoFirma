@@ -10,40 +10,47 @@
     </head>
 
     <body>
-        <div class="container">
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">Nombre</span>
+        <form action="{{ route('pymes.preview') }}" method="post" enctype="multipart/form-data">
+            @csrf
+            <div class="container">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Nombre</span>
+                </div>
+                <input name="name" id="name" type="text" class="form-control" placeholder="Nombre" aria-label="Username"
+                    aria-describedby="basic-addon1">
             </div>
-            <input type="text" class="form-control" placeholder="Nombre" aria-label="Username"
-                aria-describedby="basic-addon1">
-        </div>
-        <br>
-        <div class="container">
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon2">Cargo</span>
+            <br>
+            <div class="container">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon2">Cargo</span>
+                </div>
+                <input name="cargo" id="cargo" type="text" class="form-control" placeholder="Cargo" aria-label="Username"
+                    aria-describedby="basic-addon1">
             </div>
-            <input type="text" class="form-control" placeholder="Cargo" aria-label="Username"
-                aria-describedby="basic-addon1">
-        </div>
-        <br>
-        <div class="container">
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon3">Teléfono</span>
+            <br>
+            <div class="container">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon3">Teléfono</span>
+                </div>
+                <input name="phone" id="phone" type="text" class="form-control" placeholder="Teléfono"
+                    aria-label="Username" aria-describedby="basic-addon1">
             </div>
-            <input type="text" class="form-control" placeholder="Teléfono" aria-label="Username"
-                aria-describedby="basic-addon1">
-        </div>
-        <br>
-        <div class="container">
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon2">Foto</span>
+            <br>
+            <div class="container">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon2">Foto</span>
+                </div>
+                <input type="file" id="photo" name='photo'>
+
             </div>
-            <input type="file" id="photo" name='photo'>
-        </div>
-        <br>
-        <div class="container">
-            <a href="{{route(pymes.preview)}}" type="submit" name="btnPreviewAyudaT" id="btnPreviewAyudaT" class="btn btn-outline-primary">Preview</a>
-        </div>
+            <br>
+            <div class="container">
+                <button type="submit" name="btnPreviewAyudaT" id="btnPreviewAyudaT"
+                    class="btn btn-outline-primary">Preview</button>
+            </div>
+        </form>
+
+
     </body>
 
 
